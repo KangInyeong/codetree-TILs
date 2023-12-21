@@ -5,5 +5,5 @@ using namespace std;
 int main() {
     double a;
     cin >> a;
-    printf("%0.1lf\n", ceil(a * 30.48 * 10) / 10);
+    printf("%0.1lf\n", round(a * 30.48 * 10) / 10);
 }
