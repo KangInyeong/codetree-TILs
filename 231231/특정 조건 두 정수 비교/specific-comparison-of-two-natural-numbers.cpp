@@ -10,7 +10,7 @@ int main() {
     }else{
         cout << 0;
     };
-    cout << '\n';
+    cout << ' ';
 
     if(a==b){
         cout << 1;
