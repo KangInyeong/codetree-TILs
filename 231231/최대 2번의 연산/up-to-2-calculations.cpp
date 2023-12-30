@@ -13,13 +13,15 @@ int main() {
     }
     
     if(a%2!=0){
+        a+=1;
+        a/=2;
        flag = 2; 
     }
     
     if(flag == 1){
-        cout << a/2;
+        cout << a;
     }else if(flag == 2){
-        cout << (a + 1) / 2;
+        cout << a;
     }
     return 0;
 }
