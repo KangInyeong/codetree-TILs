@@ -6,15 +6,17 @@ int main() {
     cin >> am >> ae >> bm >> be;
 
     if(am == bm){
-        if(ae > bm){
+        if(ae > be){
             cout << "A";
         }else{
             cout << "B";
         }
-    }else if(am > bm){
-        cout << "A";
-    }else{
-        cout << "B";
+    }else if(ae == be){
+        if(am > bm){
+            cout << "A";
+        }else{
+            cout << "B";
+        }
     }
     return 0;
 }
