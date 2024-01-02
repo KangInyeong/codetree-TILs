@@ -17,6 +17,12 @@ int main() {
         }else{
             cout << "B";
         }
+    }else{
+        if(am > bm){
+            cout << "A";
+        }else if(am < bm){
+            cout << "B";
+        }
     }
     return 0;
 }
