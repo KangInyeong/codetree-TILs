@@ -6,7 +6,7 @@ int r, c;
 char dir;
 
 bool isRange(int y, int x){
-    return !(y>=1 && y<=n && x>=1 && x<=n);
+    return (y>=1 && y<=n && x>=1 && x<=n);
 }
 
 int changeDirection(int dir_num){
@@ -41,7 +41,7 @@ int main() {
         int ny = r + dy[dir_num];
         int nx = c + dx[dir_num];
 
-        if(isRange(ny,nx)){
+        if(!isRange(ny,nx)){
             dir_num = changeDirection(dir_num); //방향 전환
         }else{
             //진행
