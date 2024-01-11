@@ -3,16 +3,16 @@ using namespace std;
 
 int n, m;
 int arr[1001][1001];
-int visited[1001][1001];
+int visited[1001];
 
 int cnt = 0;
 
 void dfs(int vertex){
-    for(int i=0; i<=n; i++){
-        if(arr[vertex][i] && !visited[vertex][i]){
+    //노드 1부터 시작
+    for(int i=1; i<=n; i++){
+        if(arr[vertex][i] && !visited[i]){
             cnt++;
-            visited[vertex][i] = 1;
-            visited[i][vertex] = 1;
+            visited[i] = 1;
             dfs(i);
         }
     }
@@ -27,8 +27,10 @@ int main() {
         arr[y][x] = 1;
     }
 
+    //시작노드 방문처리
+    visited[1] = 1;
     dfs(1);
-    cout << cnt -1;
+    cout << cnt;
 
     return 0;
 }
