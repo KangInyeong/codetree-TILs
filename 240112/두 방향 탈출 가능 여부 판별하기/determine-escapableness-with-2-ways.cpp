@@ -33,7 +33,7 @@ int main() {
     visited[0][0] = 1;
     dfs(0,0);
 
-    if(visited[n][m] == 1) cout << 1;
+    if(visited[n-1][m-1] == 1) cout << 1;
     else cout << 0;
 
     return 0;
