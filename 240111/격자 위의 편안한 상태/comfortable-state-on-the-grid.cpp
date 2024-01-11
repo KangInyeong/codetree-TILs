@@ -15,7 +15,7 @@ int check(int y, int x){
         if(ny<0&&nx<0&&ny>=n&&n>=n) continue;
         if(arr[ny][nx] == 1)cnt++;
     }
-    if(cnt >= 3) return 1;
+    if(cnt == 3) return 1;
     else return 0;
 }
 
