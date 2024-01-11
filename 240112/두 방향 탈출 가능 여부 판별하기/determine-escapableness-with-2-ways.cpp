@@ -6,7 +6,6 @@ int grid[101][101];
 int visited[101][101];
 int dy[2] = {1, 0};
 int dx[2] = {0, 1};
-int order = 1;
 
 void dfs(int y, int x){
     for(int i=0; i<2; i++){
@@ -17,7 +16,7 @@ void dfs(int y, int x){
         if(ny<0 && nx<0 && ny>=n && nx>=m) continue;
         if(grid[ny][nx] == 0) continue;
 
-        visited[ny][nx] == order++;
+        visited[ny][nx] == 1;
         dfs(ny, nx);
     }
 }
@@ -31,7 +30,7 @@ int main() {
         }
     }
 
-    visited[0][0] = order++;
+    visited[0][0] = 1;
     dfs(0,0);
 
     if(visited[n][m] == 1) cout << 1;
