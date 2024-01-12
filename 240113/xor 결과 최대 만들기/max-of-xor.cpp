@@ -11,7 +11,7 @@ void choose(int num){
     if(num == m+1){
         int tmp = v[0];
         for(int i=1; i<v.size(); i++){
-            tmp = tmp ^ i;
+            tmp = tmp ^ v[i];
         }
         if(tmp > answer) answer = tmp;
         return;
