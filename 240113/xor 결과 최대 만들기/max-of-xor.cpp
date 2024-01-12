@@ -7,7 +7,7 @@ int arr[21];
 vector<int>v;
 int answer = -1;
 
-void choose(int num){
+void choose(int num, int pre_idx){
     if(num == m+1){
         int tmp = 0;
         for(int i=0; i<v.size(); i++){
@@ -18,8 +18,9 @@ void choose(int num){
     }
 
     for(int i=0; i<n; i++){
+        if(pre_idx >= i) continue;
         v.push_back(arr[i]);
-        choose(num+1);
+        choose(num+1, i);
         v.pop_back();
     }
 }
@@ -30,7 +31,7 @@ int main() {
         cin >> arr[i];
     }
 
-    choose(1);
+    choose(1, -1);
     cout << answer;
 
     return 0;
