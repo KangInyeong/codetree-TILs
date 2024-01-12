@@ -10,7 +10,6 @@ struct Node{
     int x;
 };
 queue<Node> q;
-int cnt = 0;
 int dy[4] = {-1,1,0,0};
 int dx[4] = {0,0,-1,1};
 
@@ -29,7 +28,6 @@ void bfs(){
             if(arr[ny][nx] == 1) continue;
 
             visited[ny][nx] = 1;
-            cnt++;
             q.push({ny,nx});
         }        
     }
@@ -47,11 +45,18 @@ int main() {
     for(int i=0; i<k; i++){
         int r, c;
         cin >> r >> c;
-        if(arr[r][c]==1) continue;
-        if(visited[r][c] == 0) cnt++;
-        visited[r][c] = 1;
-        q.push({r,c});
-        bfs();
+        visited[r-1][c-1] = 1;
+        q.push({r-1,c-1});
+    }
+    
+    bfs();
+
+    int cnt = 0;
+
+    for(int i=0; i<n; i++){
+        for(int j=0; j<n; j++){
+            if(visited[i][j]) cnt++;
+        }
     }
 
     cout << cnt;
