@@ -14,15 +14,15 @@ queue<Node> q;
 
 void bfs(){
     
-    int dy[2] = {0,1};
-    int dx[2] = {1,0};
+    int dy[4] = {0,1,0,-1};
+    int dx[4] = {1,0,-1,0};
 
     while(!q.empty()){
 
         Node target = q.front();
         q.pop();
 
-        for(int i=0; i<2; i++){
+        for(int i=0; i<4; i++){
             int ny = target.y + dy[i];
             int nx = target.x + dx[i];
             if(ny<0 || nx<0 || ny>=n || nx>=m) continue;
