@@ -13,7 +13,7 @@ int main() {
         }
     }
     if(sumval == n) cout << "P";
-    else cout << " N";
-    
+    else cout << "N";
+
     return 0;
 }
