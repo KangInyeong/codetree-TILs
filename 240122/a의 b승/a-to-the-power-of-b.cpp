@@ -6,6 +6,6 @@ int main() {
     
     int a, b;
     cin >> a >> b;
-    cout << pow(a,b);
+    cout << (double)pow(a,b);
     return 0;
 }
