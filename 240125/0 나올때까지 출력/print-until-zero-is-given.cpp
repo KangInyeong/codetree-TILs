@@ -8,11 +8,11 @@ int main() {
     queue<int>q;
     while(1){
         cin >> i;
-        q.push(i);
         if(i == 0)break;
+        q.push(i);
     }
-    int s = q.size();
-    for(int i=0; i<s; i++){
+    
+    while(!q.empty()){
         cout << q.front() << endl;
         q.pop();
     }
