@@ -18,14 +18,16 @@ int main() {
         cin >> num;
         b.push_back(num);
     }
-    sort(a.begin(), a.end(), a.size());
-    sort(b.begin(), b.end(), b.size());
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
 
-    int flag = 0;
+    int flag = true;
     for(int i = 0; i < n; i++)
-		if(a[i] != b[i])
-            return false;
-    return true;
+		if(a[i] != b[i]){
+            flag = false;
+            break;
+        }
+    }            
 
     if(flag == false) cout << "No";
     else cout << "Yes";
