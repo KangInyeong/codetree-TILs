@@ -18,8 +18,8 @@ int main() {
         cin >> num;
         b.push_back(num);
     }
-    sort(a.begin(), a.end());
-    sort(b.begin(), b.end());
+    sort(a.begin(), a.end(), a.size());
+    sort(b.begin(), b.end(), b.size());
 
     int flag = 0;
     for(int i=0; i<n; i++){
