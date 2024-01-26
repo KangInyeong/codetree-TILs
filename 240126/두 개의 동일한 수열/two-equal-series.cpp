@@ -8,13 +8,13 @@ int main() {
     int n;
     vector<int>a;
     vector<int>b;
+    int num;
+
     for(int i=0; i<n; i++){
-        int num;
         cin >> num;
         a.push_back(num);
     }
     for(int i=0; i<n; i++){
-        int num;
         cin >> num;
         b.push_back(num);
     }
