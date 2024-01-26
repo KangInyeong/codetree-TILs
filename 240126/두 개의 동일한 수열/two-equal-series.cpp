@@ -22,14 +22,12 @@ int main() {
     sort(b.begin(), b.end(), b.size());
 
     int flag = 0;
-    for(int i=0; i<n; i++){
-        if(a[i] != b[i]){
-            flag = 1;
-            break;
-        }
-    }
+    for(int i = 0; i < n; i++)
+		if(a[i] != b[i])
+            return false;
+    return true;
 
-    if(flag == 1) cout << "No";
+    if(flag == false) cout << "No";
     else cout << "Yes";
 
     return 0;
