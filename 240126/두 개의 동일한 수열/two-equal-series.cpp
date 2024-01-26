@@ -19,7 +19,7 @@ int main() {
         b.push_back(num);
     }
     sort(a.begin(), a.end());
-    sort(b.begin(), a.end());
+    sort(b.begin(), b.end());
 
     int flag = 0;
     for(int i=0; i<n; i++){
