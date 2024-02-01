@@ -4,7 +4,7 @@ using namespace std;
 int a, b, c;
 
 bool checkNum(int i){
-    if(c % i) return true;
+    if(i % c) return true;
     else return false;
 }
 int main() {
