@@ -4,8 +4,8 @@ using namespace std;
 int a, b, c;
 
 bool checkNum(int i){
-    if(i % c == 0) return false;
-    else return true;
+    if(i % c == 0) return true;
+    else return false;
 }
 int main() {
     
@@ -20,7 +20,7 @@ int main() {
         
     }
 
-    if(flag) cout << "YES";
-    else cout << "NO";
+    if(flag) cout << "NO";
+    else cout << "YES";
     return 0;
 }
