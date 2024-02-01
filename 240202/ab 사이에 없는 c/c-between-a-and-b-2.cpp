@@ -4,8 +4,8 @@ using namespace std;
 int a, b, c;
 
 bool checkNum(int i){
-    if(i % c) return true;
-    else return false;
+    if(i % c == 0) return false;
+    else return true;
 }
 int main() {
     
