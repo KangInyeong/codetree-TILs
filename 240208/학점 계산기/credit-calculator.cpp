@@ -17,7 +17,9 @@ int main() {
 
     double avg = sum / n;
     cout << avg << endl;
-    if(avg >= 3.0){
+    if(avg >= 4.0){
+        cout << "Perfect";
+    }else if(avg >= 3.0){
         cout << "Good";
     }else{
         cout << "Poor";
