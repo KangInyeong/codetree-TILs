@@ -15,9 +15,7 @@ int main() {
     int cnt = 0;
     for(int i=0; i<n; i++){
         sum += str[i].length();
-        for(int j=0; j<str[i].length(); j++){
-            if(str[i][j] == 'a') cnt++;
-        }
+        if(str[i][0] == 'a') cnt++;
     }
 
     cout << sum << ' ' << cnt;
