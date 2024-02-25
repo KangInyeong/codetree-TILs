@@ -9,11 +9,16 @@ int main() {
 
     int inp;
     cin >> inp;
-    int cnt = 0;
-    for (int i = s.length()-1; cnt != inp; i--) {
-        cout << s[i];
-        cnt++;
-    }
+    
+    int len = s.length();
+	int cnt = 0;
+	
+	for(int i = len - 1; i >= 0; i--) {
+		if(cnt >= inp)
+			break;
+		cout << s[i];
+		cnt++;
+	}
 
     return 0;
 }
