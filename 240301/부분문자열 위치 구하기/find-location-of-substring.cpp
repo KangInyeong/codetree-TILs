@@ -17,13 +17,15 @@ int main() {
                 if(j==s.length()-1) flag = true;
             }
         }
+
         if(flag){
             cout << i;
             break;
-        }else{
-            cout << -1;
         }
+    
     }
+
+    if(flag == false) cout << -1;
 
     return 0;
 }
