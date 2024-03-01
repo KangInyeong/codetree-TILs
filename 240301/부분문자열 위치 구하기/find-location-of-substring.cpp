@@ -20,6 +20,8 @@ int main() {
         if(flag){
             cout << i;
             break;
+        }else{
+            cout << -1;
         }
     }
 
