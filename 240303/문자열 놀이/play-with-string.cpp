@@ -14,9 +14,9 @@ int main() {
         if(com == 1){
             int a, b;
             cin >> a >> b;
-            char tmp = s[a];
-            s[a] = s[b];
-            s[b] = tmp;
+            char tmp = s[a-1];
+            s[a-1] = s[b-1];
+            s[b-1] = tmp;
         }else{
             char a, b;
             cin >> a >> b;
@@ -26,9 +26,9 @@ int main() {
                 }
             }
         }
+        cout << s << endl;
     }
 
-    cout << s;
 
     return 0;
 }
