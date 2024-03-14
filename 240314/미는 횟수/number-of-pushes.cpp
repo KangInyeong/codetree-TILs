@@ -10,7 +10,8 @@ int main() {
     int n=1;
     bool flag = false;
     for(int i=0; i<a.length(); i++){
-        string newstr = a.substr(n, a.length()) + a.substr(0,n);
+        string newstr = a.substr(a.length()-n, n) + a.substr(0,a.length()-n);
+        
         if(newstr == b) {
             flag = true;
             break;
