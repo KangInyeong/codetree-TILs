@@ -13,9 +13,9 @@ int main() {
     cout << fixed;
     cout.precision(1);
 
-    int totalsum = 0;
+    float totalsum = 0;
     for(int i=0; i<2; i++){
-        int sum = 0;
+        float sum = 0;
         for(int j=0; j<4; j++) {
             sum += arr[i][j];
         }
@@ -24,7 +24,7 @@ int main() {
     }cout << endl;
 
     for(int i=0; i<4; i++){
-        int sum = 0;
+        float sum = 0;
         for(int j=0; j<2; j++){
             sum += arr[j][i];
         }
