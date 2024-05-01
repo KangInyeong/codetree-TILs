@@ -8,9 +8,9 @@ int main() {
     int n;
     cin >> n;
 
-    unordered_map<int, int> um;
-    vector<int>v;
-    int x, y;
+    unordered_map<long long, long long> um;
+    vector<long long>v;
+    long long x, y;
     for(int i=0; i<n; i++){
         cin >> x >> y;
         if(um.find(x) == um.end()){
